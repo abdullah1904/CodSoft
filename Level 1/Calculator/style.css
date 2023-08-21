@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font1: 'Bricolage Grotesque', sans-serif;
+    --font2: 'Raleway', sans-serif;
+    --color1: #6f3df4;
+    --color2: #f2c335;
+    --color3: #191641;
+    --color4: #fafafa;
+    --color5: #00522e;
+    --color6: #372e1d;
+    --color7: #ce9f69;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font1);
+    font-style: oblique;
+    background-color: var(--color1);
+    color: var(--color4);
+    padding: 2vh 0;
+    font-size: x-large;
+}
+main{
+    width: 100%;
+}
+main .cal{
+    width: 40%;
+    margin: 4vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0;
+    flex-direction: column;
+}
+main .cal .display{
+    width: 40%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color1);
+    padding: 2vh 0.5vh 1vh;
+    accent-color: var(--color1);
+    font-family: var(--font1);
+}
+main .cal .box{
+    width: 40%;
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+main .cal .box section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5vh 0;
+}
+main .cal .box section button{
+    width: 20%;
+    padding: 2vh 0.5vh;
+    background-color: var(--color1);
+    outline: none;
+    color: var(--color4);
+    font-family: var(--font2);
+    border: 1px solid var(--color4);
+    border-radius: 50%;
+}
+@media (width<= 768px){
+    header{
+        font-size: medium;
+    }
+    main .cal{
+        width: 90%;
+    }
+    main .cal .display{
+        width: 80%;
+    }
+    main .cal .box{
+        width: 80%;
+    }
+}
