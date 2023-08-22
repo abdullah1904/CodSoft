@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --color1: #425c81;
+    --color2: #a5d4de;
+    --color3: #f3f4f9;
+    --color4: #d8e3e9;
+    --font2: 'Oswald', sans-serif;
+    --font1: 'Nunito', sans-serif;
+}
+@keyframes rotator{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0Deg);
+    }
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2vh 1vh;
+    font-family: var(--font1);
+    background-color: var(--color1);
+    color: var(--color3);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+header h1{
+    width: 50%;
+}
+header img{
+    display: none;
+}
+header nav{
+    width: 50%;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a{
+    color: var(--color1);
+    text-decoration: none;
+    background-color: var(--color3);
+    padding: 1vh 1.5vh;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+}
+header nav ul li a:hover{
+    color: var(--color3);
+    background-color: var(--color1);
+    border-bottom: 1px solid var(--color3);
+    border-radius: 0%;
+}
+main{
+    width: 100%;
+}
+main #home{
+    width: 100%;
+    display: flex;
+    background-color: var(--color3);
+}
+main #home .titleSec{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font1);
+    padding: 0 2vh;
+    color: var(--color1);
+}
+main #home .titleSec h2{
+    font-size: 70px;
+}
+main #home .titleSec h3{
+    font-size: x-large;
+    text-transform: capitalize;
+    font-family: var(--font2);
+}
+main #home .titleSec button{
+    width: 20%;
+    margin: 1vh;
+    border: none;
+}
+main #home .titleSec button a{
+    width: 100%;
+    display: inline-block;
+    background-color: var(--color1);
+    padding: 0.5vh 1vh;
+    color: var(--color3);
+    text-decoration: none;
+    font-family: var(--font1);
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+}
+main #home .titleSec button a:hover{
+    box-shadow: 0px 0px 30px var(--color1);
+}
+main #home .imgSec{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 0;
+}
+main #home .imgSec img{
+    width: 50%;
+    border-radius: 50%;
+    animation: rotator 1.5s ease;
+    box-shadow: 0px 2px 80px var(--color1);
+}
+main #about{
+    width: 100%;
+    background-color: var(--color1);
+    padding: 5vh;
+}
+main #about .tSec{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 5px double var(--color4);
+    font-family: var(--font1);
+    color: var(--color4);
+    text-align: center;
+    font-size: x-large;
+}
+main #about .container{
+    width: 88%;
+    margin: 1vh auto;
+    font-family: var(--font1);
+    color: var(--color3);
+    text-align: justify;
+    text-align-last: center;
+}
+main #skill{
+    width: 100%;
+    background-color: var(--color4);
+    padding: 5vh;
+    color: var(--color1);
+}
+main #skill .tSec{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 5px double var(--color1);
+    font-family: var(--font2);
+    text-align: center;
+    font-size: x-large;
+}
+main #skill .sSec{
+    width: 88%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font1);
+    margin: 1vh auto;
+    flex-wrap: wrap;
+}
+main #skill .sSec .box{
+    width: 48%;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 5px double var(--color1);
+    border-radius: 15px;
+    margin: 1vh;
+}
+main #skill .sSec .box img{
+    width: 10%;
+}
+main #skill .sSec .box h3{
+    width: 50%;
+    padding: 1vh;
+}
+main #projects{
+    width: 100%;
+    background-color: var(--color1);
+    padding: 5vh;
+    color: var(--color4);
+}
+main #projects .tSec{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 5px double var(--color4);
+    font-family: var(--font1);
+    text-align: center;
+    font-size: x-large;
+}
+main #projects .showCase{
+    width: 100%;
+}
+@media (width<= 768px){
+    header h1{
+        text-align: center;
+        text-align-last: center;
+        width: 92%;
+        font-size: x-large;
+    }
+    header img{
+        display: block;
+        width: 8%;
+    }
+    header nav{
+        width: 100%;
+        margin: 2vh 0;
+        display: none;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin: 2vh 0;
+        width: 90%;
+    }
+    header nav ul li a{
+        color: var(--color3);
+        background-color: var(--color1);
+        border-bottom: 1px solid var(--color3);
+        border-radius: 0;
+        width: 100%;
+    }
+    main #home{
+        flex-direction: column-reverse;
+    }
+    main #home .titleSec, main #home .imgSec{
+        width: 100%;
+    }
+    main #home .titleSec h2{
+        font-size: 50px;
+        text-align: center;
+        text-align-last: center;
+    }
+    main #home .titleSec h3{
+        font-size: large;
+        text-align: justify;
+        text-align-last: center;
+    }
+    main #home .titleSec button{
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main #home .imgSec img{
+        width: 70%;
+    }
+    main #about{
+        padding: 4vh 2vh;
+    }
+    main #about .tSec, 
+    main #about .container{
+        width: 100%;
+    }
+    main #about .container{
+        margin: 2vh auto;
+    }
+    main #skill{
+        padding: 2vh;
+    }
+    main #skill .tSec, 
+    main #skill .sSec,
+    main #skill .sSec .box,
+    main #skill .sSec .box h3{
+        width: 100%;
+    }
+    main #projects .tSec{
+        width: 100%;
+    }
+}
