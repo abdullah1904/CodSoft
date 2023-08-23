@@ -198,7 +198,58 @@ main #projects .tSec{
     font-size: x-large;
 }
 main #projects .showCase{
+    width: 88%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font2);
+    margin: 1vh auto;
+    flex-wrap: wrap;
+}
+main #projects .showCase .box{
+    width: 48%;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-bottom: 3px ridge var(--color4);
+    margin: 1vh;
+    text-transform: capitalize;
+}
+main #projects .showCase .box h3{
+    font-size: x-large;
+}
+main #contact{
     width: 100%;
+    background-color: var(--color4);
+    padding: 5vh;
+    color: var(--color1);
+}
+main #contact .tSec{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 5px double var(--color1);
+    font-family: var(--font2);
+    text-align: center;
+    font-size: x-large;
+}
+main #contact .box{
+    width: 88%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font1);
+    margin: 1vh auto;
+    flex-wrap: wrap;
+    padding: 2vh 1vh;
+}
+main #contact .box a{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main #contact .box a img{
+    width: 30%;
 }
 @media (width<= 768px){
     header h1{
@@ -273,7 +324,11 @@ main #projects .showCase{
     main #skill .sSec .box h3{
         width: 100%;
     }
-    main #projects .tSec{
+    main #projects{
+        padding: 2vh;
+    }
+    main #projects .tSec,
+    main #projects .showCase .box{
         width: 100%;
     }
 }
