@@ -256,6 +256,14 @@ main #contact .box a:hover{
 main #contact .box a img{
     width: 30%;
 }
+footer{
+    width: 100%;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-family: var(--font1);
+    text-align: center;
+    padding: 2vh;
+}
 @media (width<= 768px){
     header h1{
         text-align: center;
