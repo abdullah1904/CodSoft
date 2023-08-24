@@ -241,12 +241,17 @@ main #contact .box{
     margin: 1vh auto;
     flex-wrap: wrap;
     padding: 2vh 1vh;
+    overflow: hidden;
 }
 main #contact .box a{
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease-in-out;
+}
+main #contact .box a:hover{
+    transform: scale(1.2);
 }
 main #contact .box a img{
     width: 30%;
@@ -330,5 +335,15 @@ main #contact .box a img{
     main #projects .tSec,
     main #projects .showCase .box{
         width: 100%;
+    }
+    main #contact{
+        padding: 2vh;
+    }
+    main #contact .tSec,
+    main #contact .box{
+        width: 100%;
+    }
+    main #contact .box a{
+        width: 50%;
     }
 }
