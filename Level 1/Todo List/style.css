@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Karla&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: #9a2f43;
+    --color2: #fbf7f5;
+    --color3: #f5cbb9;
+    --color4: #c9867e;
+    --font1: 'Bricolage Grotesque', sans-serif;
+    --font2: 'Karla', sans-serif;
+}
+body{
+    background-color: var(--color2);
+}
+header{
+    width: 100%;
+    text-align: center;
+    padding: 2vh 0;
+    background-color: var(--color1);
+    color: var(--color2);
+    font-size: larger;
+    font-family: var(--font1);
+}
+main .input-box{
+    width: 30%;
+    margin: 5vh auto;
+    padding: 2vh 1vh;
+    border-bottom: 1px solid var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .input-box input{
+    padding: .5vh;
+    margin: 1vh 0;
+    width: 50%;
+    border: none;
+    background-color: var(--color2);
+    border-bottom: 1px solid var(--color1);
+    caret-color: var(--color1);
+    font-family: var(--font1);
+    color: var(--color1);
+}
+main .input-box input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--color1);
+}
+main .input-box button{
+    width: 25%;
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: .5vh;
+    border: var(--color2);
+    border-radius: 10px;
+    font-family: var(--font1);
+}
+main .tasks-box{
+    width: 40%;
+    margin: 0 auto;
+}
+main .tasks-box .item{
+    border-bottom: 1px solid var(--color1);
+}
+main .tasks-box .item .inputSetter{
+    display: flex;
+    align-items: center;
+    margin: 1vh;
+    justify-content: space-between;
+}
+main .tasks-box .item .inputSetter .editBtns button{
+    padding: 0.8vh;
+    color: var(--color2);
+    border: none;
+    outline: none;
+    font-family: var(--font1);
+    border-radius: 8px;
+}
+main .tasks-box .item .inputSetter .editBtns .remove{
+    background-color: var(--color1);
+}
+main .tasks-box .item .inputSetter .editBtns .edit{
+    background-color: var(--color4);
+}
+main .tasks-box .item .updater{
+    display: none;
+    margin: 0.5vh 1vh;
+}
+main .tasks-box .item .updater button{
+    padding: 0.5vh;
+    color: var(--color2);
+    border: none;
+    outline: none;
+    font-family: var(--font2);
+    border-radius: 5px;
+}
+main .tasks-box .item .updater .save{
+    background-color: var(--color4);
+}
+main .tasks-box .item .updater .cancel{
+    background-color: var(--color1);
+}
+@media (width<=768px){
+    main .input-box{
+        width: 80%;
+    }
+    main .tasks-box{
+        width: 90%;
+    }
+}
